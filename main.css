@@ -1,0 +1,75 @@
+#landing {
+    min-height: 87vh;
+    background-image: url('images/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+@media (max-width: 1920px) {
+    .py-cus {
+        margin-top: 13rem !important;
+    }
+}   
+@media (max-width: 1600px) {
+    #landing {
+        min-height: 77vh;
+    }
+    .py-cus {
+        margin-top: 11rem !important;
+    }
+}    
+@media (max-width: 1440px) {
+    #landing {
+        min-height: 67vh;
+    }
+}    
+@media (max-width: 1200px) {
+    #landing {
+        min-height: 55vh;
+    }
+    .p-1 {
+        font-size: var(--fs-lp) !important;
+    }
+    .py-cus {
+        margin-top: 9rem !important;
+        width: 300px !important;
+    }
+}    
+@media (max-width: 992px) {
+    #landing {
+        min-height: 45vh;
+    }
+    .hd-1 {
+        font-size: var(--fs-h1) !important;
+    }
+    .p-1 {
+        font-size: var(--fs-lp) !important;
+    }
+    .py-cus {
+        margin-top: 6rem !important;
+        width: 250px !important;
+    }
+} 
+/* Tablet Display Settings */
+/* Display None =< Medium Screen */
+@media (min-width: 768px) {
+    #landing-mobile {
+        display: none;
+    }
+}  
+button {
+    font-size: var(--fs-p);
+    font-weight: 500;
+    padding: 10px 2rem 10px 2rem;
+    border: 2px solid blue;
+    background: blue;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover {
+    background: white;
+    color: blue;
+}

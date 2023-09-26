@@ -1,0 +1,13 @@
+.footer {
+    background-color: var(--bg-primary);
+    color: white; 
+    padding: 30px 0;
+}
+#awesome i{
+    font-size: 2rem;
+    color: white;
+    transition: 0.5s;
+}
+#awesome i:hover {
+    color: var(--clr-font-primary);
+}
