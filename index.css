@@ -178,7 +178,7 @@ ul li:hover {
 /* Header End */
 #landing {
     min-height: 87vh;
-    background-image: url('../images/background.gif');
+    background-image: url('images/background.gif');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
