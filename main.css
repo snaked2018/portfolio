@@ -7,14 +7,64 @@
     justify-content: center;
 
 }
-#landing-mobile {
-    background-color: linear-gradient(126.54740784019282deg, rgba(255, 255, 255,1) 19.00085970886752%,rgba(253, 253, 255,1) 19.00085970886752%,rgba(0, 0, 255,1) 68.79886985844016%);
-    min-height: 40vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+.mobile-bg img{
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid blue;
+    top: 45px;
+    left: 50px;
+    border-radius: 100px;
+    height: 30vh;
+    width: 300px;
+    z-index: -100;
+    object-fit: cover;
+    margin: auto;
+    animation: borderinfinite 30s infinite;
 }
+
+@keyframes borderinfinite {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
+}
+
 @media (max-width: 1920px) {
     .py-cus {
         margin-top: 13rem !important;
