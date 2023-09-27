@@ -7,6 +7,14 @@
     justify-content: center;
 
 }
+#landing-mobile {
+    background-color: linear-gradient(126.54740784019282deg, rgba(255, 255, 255,1) 19.00085970886752%,rgba(253, 253, 255,1) 19.00085970886752%,rgba(0, 0, 255,1) 68.79886985844016%);
+    min-height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 1920px) {
     .py-cus {
         margin-top: 13rem !important;
@@ -37,7 +45,7 @@
         width: 300px !important;
     }
 }    
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #landing {
         min-height: 45vh;
     }
