@@ -130,3 +130,8 @@ span {
 .navbar-toggler:hover .navbar-toggler-icon {
     color: #555; /* Set the hover color of the hamburger icon */
 }
+.custom-nav .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;/* Adjust the font size as needed */
+}
