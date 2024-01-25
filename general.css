@@ -58,7 +58,7 @@ span {
     color: var(--bg-primary);
 }
 .p {
-    font-size: var(--fs-p1);
+    font-size: var(--fs-p);
     font-style: var(--fs-primary);
     color: var(--clr-font-primary);
 }
