@@ -122,3 +122,11 @@ span {
 .navbar-brand {
     color: inherit !important; /* Set color to inherit, removing default link color */
 }
+
+.nav-style {
+    color: black; /* Set the default color of the hamburger icon */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    color: #555; /* Set the hover color of the hamburger icon */
+}
