@@ -67,7 +67,7 @@ span {
 }
 .py-cus {
     margin-top: 8rem;
-    width: 400px;
+    width: 350px;
 }
 .py-cus-mobile {
     margin: 5rem 0;
@@ -111,4 +111,14 @@ span {
     #landing {
         display: none;
     }
+}
+.navbar-nav .nav-link {
+    color: inherit !important; /* Set color to inherit, removing default link color */
+}
+.logo-name {
+    color: inherit !important; /* Set color to inherit, removing default link color */
+}
+
+.navbar-brand {
+    color: inherit !important; /* Set color to inherit, removing default link color */
 }
