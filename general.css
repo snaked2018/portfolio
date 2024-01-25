@@ -93,40 +93,46 @@ span {
     margin: 10px 10px 10px 0px;
     border: 3px solid blue;
     }   
-@media (max-width: 567px) {
-    .navbar {
-        padding-left: 12px !important;
-    }    
-}  
-@media (max-width: 768px) {
-    .navbar-toggler {
-        display: block;
+    @media (max-width: 567px) {
+        .navbar {
+            padding-left: 12px !important;
+        }
     }
-    .navbar-collapse {
-        display: none;
+    
+    @media (max-width: 768px) {
+        .navbar-toggler {
+            display: block;
+        }
+    
+        .navbar-collapse {
+            display: none;
+            transition: height 0.3s ease; /* Add a smooth transition for height changes */
+        }
+    
+        .navbar-toggler.collapsed + .navbar-collapse {
+            display: block;
+        }
+    
+        #landing {
+            display: none;
+        }
     }
-    .navbar-toggler.collapsed + .navbar-collapse {
-        display: block;
+    
+    .navbar-nav .nav-link {
+        color: inherit !important;
     }
-    #landing {
-        display: none;
+    
+    .logo-name,
+    .navbar-brand,
+    .nav-style {
+        color: inherit !important;
     }
-}
-.navbar-nav .nav-link {
-    color: inherit !important; /* Set color to inherit, removing default link color */
-}
-.logo-name {
-    color: inherit !important; /* Set color to inherit, removing default link color */
-}
-
-.navbar-brand {
-    color: inherit !important; /* Set color to inherit, removing default link color */
-}
-
-.nav-style {
-    color: black; /* Set the default color of the hamburger icon */
-}
-
-.navbar-toggler:hover .navbar-toggler-icon {
-    color: #555; /* Set the hover color of the hamburger icon */
-}
+    
+    .nav-style {
+        transition: color 0.3s ease; /* Add a smooth transition for color changes */
+    }
+    
+    .navbar-toggler:hover .nav-style {
+        color: #555; /* Set the hover color of the hamburger icon */
+    }
+    
