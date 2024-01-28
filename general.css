@@ -135,3 +135,9 @@ span {
     text-align: center;
     margin: auto;/* Adjust the font size as needed */
 }
+@media (max-width: 768px) {
+    .nav-link {
+        width: 100%;
+    }
+
+}

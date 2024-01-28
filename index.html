@@ -41,20 +41,20 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav custom-nav">
-                    <li class="nav-item">
-                        <a class="nav-link"
+                    <a class="nav-link"
                             href="https://drive.google.com/file/d/1u90y4t1q1Zwik2W-_yAZmwkZvOsJoAOq/view?usp=sharing"
-                            target="_blank">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".#contact">Fire me an email</a>
-                    </li>
+                            target="_blank"><li class="nav-item">
+                        Resume
+                    </li></a>
+                    <a class="nav-link" href=".#about"><li class="nav-item">
+                       About
+                    </li></a>
+                    <a class="nav-link" href=".#projects"><li class="nav-item">
+                       Projects
+                    </li></a>
+                    <a class="nav-link" href=".#contact"><li class="nav-item">
+                        Fire me an email
+                    </li></a>
                 </ul>
             </div>
         </div>
@@ -63,11 +63,27 @@
 
 <script>
     $(document).ready(function () {
-        $("#navbarToggleBtn").click(function () {
+        // Function to toggle the visibility of the navigation bar
+        function toggleNavbar() {
             $("#navbarNav").toggle();
+        }
+
+        // Attach click event listener to the navbar toggle button
+        $("#navbarToggleBtn").click(function () {
+            toggleNavbar();
+        });
+
+        // Get all the links inside the navigation bar
+        var links = $("#navbarNav a");
+
+        // Attach click event listener to each link
+        links.click(function () {
+            // Close the navigation bar when a link is clicked
+            toggleNavbar();
         });
     });
 </script>
+
 
 <main>
     <!-- Landing Page-->
@@ -77,7 +93,7 @@
                 <h1 class="hd-1">Designer</h1>
                 <p class="p p-1">Graphic designer specializing in UI design and design systems</p>
             </div>
-            <div class="py-cus text-start">
+            <div class="py-cus text-end">
                 <h1 class="hd-1">&lt;Coder&gt;</h1>
                 <p class="p p-1">Full-Stack Web Developer who writes clean, elegant, and efficient code.</p>
             </div>
